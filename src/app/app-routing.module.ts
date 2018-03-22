@@ -3,7 +3,7 @@
 // slightly different if you are using a different tooling approach.
 
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, ExtraOptions, PreloadAllModules } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 // Note there is no import of the HrSearchComponent or reference
 // to './hr-files-search.component'.
