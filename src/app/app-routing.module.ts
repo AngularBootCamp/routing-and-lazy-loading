@@ -3,9 +3,9 @@
 // slightly different if you are using a different tooling approach.
 
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, ExtraOptions } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
-// Note there is no import of the HrSearchComponent or reference
+// Note there is no import of the HrFilesSearchComponent or reference
 // to './hr-files-search.component'.
 
 const routes: Routes = [
