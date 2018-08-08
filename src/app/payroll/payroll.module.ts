@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+import { SharedModule } from '../shared/shared.module';
 
 import { PayrollSearchComponent } from './payroll-search.component';
-import { SharedModule } from '../shared/shared.module';
 
 const payrollRoutes: Routes = [
   { path: '', component: PayrollSearchComponent }
