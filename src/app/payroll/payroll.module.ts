@@ -11,13 +11,11 @@ const payrollRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    PayrollSearchComponent
-  ],
+  declarations: [PayrollSearchComponent],
   imports: [
     SharedModule,
     CommonModule,
     RouterModule.forChild(payrollRoutes)
   ]
 })
-export class PayrollModule { }
+export class PayrollModule {}

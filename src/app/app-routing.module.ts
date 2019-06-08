@@ -10,8 +10,16 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'hr', pathMatch: 'full' },
-  { path: 'hr', loadChildren: './hr-files/hr.module#HrModule' },
-  { path: 'payroll', loadChildren: './payroll/payroll.module#PayrollModule' }
+  {
+    path: 'hr',
+    loadChildren: () =>
+      import('./hr-files/hr.module').then(m => m.HrModule)
+  },
+  {
+    path: 'payroll',
+    loadChildren: () =>
+      import('./payroll/payroll.module').then(m => m.PayrollModule)
+  }
 ];
 
 const config: ExtraOptions = {
@@ -25,7 +33,7 @@ const config: ExtraOptions = {
   imports: [RouterModule.forRoot(routes, config)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
 
 // Behind the scenes, Angular converts the above syntax to something like
 // this:
