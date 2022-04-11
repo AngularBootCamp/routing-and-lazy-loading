@@ -13,8 +13,8 @@ const payrollRoutes: Routes = [
 @NgModule({
   declarations: [PayrollSearchComponent],
   imports: [
-    SearchModule,
     CommonModule,
+    SearchModule,
     RouterModule.forChild(payrollRoutes)
   ]
 })

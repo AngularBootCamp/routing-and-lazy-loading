@@ -13,8 +13,8 @@ const hrRoutes: Routes = [
 @NgModule({
   declarations: [HrFilesSearchComponent],
   imports: [
-    SearchModule,
     CommonModule,
+    SearchModule,
     RouterModule.forChild(hrRoutes)
   ] // import MODULES
 })
