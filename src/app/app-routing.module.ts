@@ -34,9 +34,3 @@ const config: ExtraOptions = {
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
-
-// Behind the scenes, Angular converts the above syntax to something like
-// this:
-
-// loadChildren: () =>
-// System.import('./hr/hr.module').then(({HrModule}) => HrModule)
