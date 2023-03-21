@@ -1,7 +1,3 @@
-// This example shows the particular variation of routing syntax
-// needed to work with the CLI lazy loading support. The syntax can be
-// slightly different if you are using a different tooling approach.
-
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 
