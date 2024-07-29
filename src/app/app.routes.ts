@@ -4,7 +4,7 @@
 
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [
+export const appRoutes: Routes = [
   { path: '', redirectTo: 'hr', pathMatch: 'full' },
   {
     path: 'hr',
